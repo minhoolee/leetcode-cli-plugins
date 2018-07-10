@@ -46,7 +46,7 @@ plugin.submitProblem = function(problem, cb) {
         return log.info('  ' + h.prettyText(' ' + e.message, false));
       }
 
-      ctx.message = 'update ' + filename;
+      ctx.message = 'Update ' + filename + ' submission ';
       ctx.content = new Buffer(h.getFileData(problem.file)).toString('base64');
 
       var onFileDone = function(e, res) {
